@@ -222,9 +222,9 @@ end
 class UserQ20
   # 以下に回答を記載
   attr_reader :user_name, :age
-  def initialize(user)
-    @user_name = user[:name]
-    @age = user[:age]
+  def initialize(**params)
+    @user_name = params[:name]
+    @age = params[:age]
   end
 
 end
